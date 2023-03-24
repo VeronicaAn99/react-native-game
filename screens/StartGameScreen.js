@@ -11,8 +11,14 @@ function StartGameScreen() {
         autoCapitalize="none"
         autoCorrect={false}
       />
-      <PrimaryButton text="Reset" />
-      <PrimaryButton text="Confirm" />
+      <PrimaryButton
+        handleButtonPress={() => console.log("Reset")}
+        text="Reset"
+      />
+      <PrimaryButton
+        handleButtonPress={() => console.log("Confirm")}
+        text="Confirm"
+      />
     </View>
   );
 }
@@ -26,7 +32,7 @@ const styles = StyleSheet.create({
     marginTop: 100,
     marginHorizontal: 24,
     borderRadius: 8,
-    backgroundColor: "#72063c",
+    backgroundColor: "#4b0426",
     elevation: 4,
     shadowColor: "#282828",
     shadowOffset: { width: 1, height: 8 },
